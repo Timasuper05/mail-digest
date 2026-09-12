@@ -16,9 +16,11 @@ client.Inbox.Open(FolderAccess.ReadOnly);
 DateTime date = timeZoneMoscow.AddDays(-1);
 var a = client.Inbox.Search(SearchQuery.DeliveredAfter(date));
 var s = client.Inbox.Fetch(a, MessageSummaryItems.Envelope);
-
+if(s.Count== 0)
+{
+    Console.WriteLine("писем нет");
+}
 foreach (var item in  s)
 {
-    
         Console.WriteLine($"Входящие: {item.Envelope.From} {item.Envelope.Subject} {item.Date} ");
 }

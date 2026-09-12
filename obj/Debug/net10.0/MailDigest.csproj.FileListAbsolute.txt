@@ -1,0 +1,14 @@
+C:\Users\User\mail-digest\bin\Debug\net10.0\MailDigest.exe
+C:\Users\User\mail-digest\bin\Debug\net10.0\MailDigest.deps.json
+C:\Users\User\mail-digest\bin\Debug\net10.0\MailDigest.runtimeconfig.json
+C:\Users\User\mail-digest\bin\Debug\net10.0\MailDigest.dll
+C:\Users\User\mail-digest\bin\Debug\net10.0\MailDigest.pdb
+C:\Users\User\mail-digest\obj\Debug\net10.0\MailDigest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\mail-digest\obj\Debug\net10.0\MailDigest.AssemblyInfoInputs.cache
+C:\Users\User\mail-digest\obj\Debug\net10.0\MailDigest.AssemblyInfo.cs
+C:\Users\User\mail-digest\obj\Debug\net10.0\MailDigest.csproj.CoreCompileInputs.cache
+C:\Users\User\mail-digest\obj\Debug\net10.0\MailDigest.dll
+C:\Users\User\mail-digest\obj\Debug\net10.0\refint\MailDigest.dll
+C:\Users\User\mail-digest\obj\Debug\net10.0\MailDigest.pdb
+C:\Users\User\mail-digest\obj\Debug\net10.0\MailDigest.genruntimeconfig.cache
+C:\Users\User\mail-digest\obj\Debug\net10.0\ref\MailDigest.dll

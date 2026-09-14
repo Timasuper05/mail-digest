@@ -12,7 +12,7 @@ static async Task SendMessage(string tgToken, string tgChatId, string message)
 {
     using HttpClient clientHttp = new HttpClient();
     clientHttp.BaseAddress = new Uri("https://api.telegram.org/bot" + tgToken + "/");
-    var sc =  clientHttp.PostAsync("sendMessage", new StringContent(JsonSerializer.Serialize(new { chat_id = tgChatId, text = message }), System.Text.Encoding.UTF8, "application/json")).Result;
+    var sc = await clientHttp.PostAsync("sendMessage", new StringContent(JsonSerializer.Serialize(new { chat_id = tgChatId, text = message }), System.Text.Encoding.UTF8, "application/json"));
     try
     {
        Console.WriteLine(sc.StatusCode);
@@ -41,11 +41,12 @@ string message = "";
 if(s.Count== 0)
 {
     Console.WriteLine("писем нет");
-    SendMessage(tgToken, tgChatId, "Писем нет");
+   await SendMessage(tgToken, tgChatId, "Писем нет");
+    return;
 }
 foreach (var item in  s)
 {
         Console.WriteLine($"Входящие: {item.Envelope.From} {item.Envelope.Subject} {item.Date} ");
         message += $"Входящие: {item.Envelope.From} {item.Envelope.Subject} \n";
 }
-SendMessage(tgToken, tgChatId,  message);
+await SendMessage(tgToken, tgChatId,  message);
